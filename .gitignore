@@ -5,4 +5,4 @@
 /.venv/
 /build/
 /dist/
-/.github/
+/.github/workflows/test.yml
