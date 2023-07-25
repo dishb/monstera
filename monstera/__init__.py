@@ -167,9 +167,8 @@ def _main() -> int:
     """
 
     parser = ArgumentParser(prog = "monstera",
-                            description = """description: monstera is a cross-platform CLI to
-                                             quickly retrieve system information to make issue
-                                             tracking easier.""",
+                            description = """description: A cross-platform CLI to quickly retrieve
+                                             system information to make issue tracking easier.""",
                             )
     parser.add_argument("-m", "--module",
                         nargs = "*",

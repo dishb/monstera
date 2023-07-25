@@ -1,8 +1,8 @@
 from setuptools import setup, find_packages
 
 VERSION = "0.0.1"
-DESCRIPTION = """monstera is a cross-platform CLI to quickly retrieve system information to make
-                 issue tracking easier."""
+DESCRIPTION = """A cross-platform CLI to quickly retrieve system information to make issue tracking
+                 easier."""
 
 with open("README.md", "r", encoding = "utf-8") as file:
     LONG_DESCRIPTION = file.read()
