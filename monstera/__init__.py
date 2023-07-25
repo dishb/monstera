@@ -179,35 +179,24 @@ def _main() -> int:
                         dest = "names",
                         metavar = "MODULE NAMES"
                         )
-    parser.add_argument("-c", "--copyright",
-                        nargs = 0,
-                        action = "store",
-                        help = "display monstera's copyright (from the MIT License)",
-                        required = False,
-                        dest = "copyright",
-                        )
 
     args = parser.parse_args()
 
     packages = args.names
-    copyright_ = args.copyright
     info = run(packages = packages)
 
-    if copyright_ is not None:
-        print(f"\nPython: {info['python_version']}, {info['release_level']}")
-        print(f"\nPython Location: {info['python_location']}")
-        print(f"\nOperating System: {info['os']} {info['os_version']}")
-        print(f"\nArchitecture: {info['architecture']}")
-        print(f"\nPip: {info['pip_version']}")
-        print(f"\nPip Location: {info['pip_location']}")
+    print(f"\nPython: {info['python_version']}, {info['release_level']}")
+    print(f"\nPython Location: {info['python_location']}")
+    print(f"\nOperating System: {info['os']} {info['os_version']}")
+    print(f"\nArchitecture: {info['architecture']}")
+    print(f"\nPip: {info['pip_version']}")
+    print(f"\nPip Location: {info['pip_location']}")
 
-        if packages is not None:
-            for pkg in packages:
-                print(f"\n{pkg}:")
-                print(f"    Location: {info[f'{pkg}_location']}")
-                print(f"    Version: {info[f'{pkg}_version']}")
-    else:
-        print(__copyright__)
+    if packages is not None:
+        for pkg in packages:
+            print(f"\n{pkg}:")
+            print(f"    Location: {info[f'{pkg}_location']}")
+            print(f"    Version: {info[f'{pkg}_version']}")
 
     print("")
 
