@@ -1,0 +1,10 @@
+[MAIN]
+
+ignore-paths = setup.py,
+               tests/
+
+[MESSAGES CONTROL]
+
+disable = too-many-locals,
+          too-many-branches,
+          too-many-statements
