@@ -1,4 +1,4 @@
-name: Lint code with Pylint
+name: Run tests with Pytest
 
 on:
   push:
@@ -7,12 +7,12 @@ on:
     branches: [ main ]
 
 jobs:
-  build:
+  test:
     runs-on: macos-latest
     strategy:
       matrix:
         python-version: ["3.9", "3.10", "3.11"]
-  
+
     steps:
     - uses: actions/checkout@v3
     - name: Set up Python ${{ matrix.python-version }}
@@ -23,7 +23,7 @@ jobs:
       run: |
         pip install --upgrade pip
         pip install --upgrade -r requirements.txt
-        pip install --upgrade -r dev-requirements.txt    
-    - name: Analyze the code with Pylint
+        pip install --upgrade -r dev-requirements.txt     
+    - name: Test the code with Pytest
       run: |
-        pylint $(git ls-files '*.py') --rcfile=./.pylintrc
+        pytest -q --rootdir=./tests/
