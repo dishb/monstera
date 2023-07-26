@@ -1,8 +1,8 @@
 from setuptools import setup, find_packages
 
 VERSION = "0.0.1"
-DESCRIPTION = """A cross-platform CLI to quickly retrieve system information to make issue tracking
-                 easier."""
+DESCRIPTION = """A cross-platform CLI to quickly retrieve system information to make issue
+management easier."""
 
 with open("README.md", "r", encoding = "utf-8") as file:
     LONG_DESCRIPTION = file.read()
@@ -15,7 +15,7 @@ with open("requirements.txt", "r", encoding = "utf-8") as file:
 setup(name = "monstera",
       version = VERSION,
       author = "Dishant B. (@dishb)",
-      author_email = "<code.dishb@gmail.com>",
+      author_email = "code.dishb@gmail.com",
       description = DESCRIPTION,
       long_description = LONG_DESCRIPTION,
       long_description_content_type = "text/markdown",

@@ -2,7 +2,7 @@
 
 # monstera
 
-A cross-platform CLI to quickly retrieve system information to make issue tracking easier.
+A cross-platform CLI to quickly retrieve system information to make issue management easier.
 
 ## Features:
 A list of all the information collected:

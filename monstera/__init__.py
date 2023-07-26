@@ -1,7 +1,7 @@
 """
 monstera
 
-Author: Dishant B. (@dishb) <code.dishb@gmail.com>
+Author: Dishant B. (@dishb) code.dishb@gmail.com
 License: MIT License
 Source: https://github.com/dishb/monstera
 """
@@ -166,9 +166,11 @@ def _main() -> int:
         int: The exit code.
     """
 
+    description = """description: A cross-platform CLI to quickly retrieve
+system information to make issue management easier."""
+
     parser = ArgumentParser(prog = "monstera",
-                            description = """description: A cross-platform CLI to quickly retrieve
-                                             system information to make issue tracking easier.""",
+                            description = description,
                             )
     parser.add_argument("-m", "--module",
                         nargs = "*",
