@@ -1,4 +1,4 @@
-# Documentation
+# CLI Documentation
 
 This is the documentation for `monstera`'s CLI.
 
