@@ -86,5 +86,8 @@ It is recommended to read the [`./CONTRIBUTING.md`](https://github.com/dishb/mon
 ## License:
 This project is licensed under the `MIT License`. The full copyright can be found in the [`./LICENSE.md`](https://github.com/dishb/monstera/blob/main/LICENSE.md) file.
 
+## Attribution
+
 The background photo in [`./assets/banner.png`](https://github.com/dishb/monstera/blob/main/assets/banner.png) is by [Gilles Lambert](https://unsplash.com/@gilleslambert?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/photos/mSK5nNsAsLY?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+
 The font used is [Victor Mono](https://github.com/rubjo/victor-mono) (bold).
