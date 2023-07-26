@@ -1,10 +1,7 @@
-name: Build and run the package
+name: Build and run
 
 on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+  workflow_dispatch
 
 jobs:
   build:
@@ -33,4 +30,3 @@ jobs:
     - name: Run the module
       run: |
         python -m monstera
-        monstera
