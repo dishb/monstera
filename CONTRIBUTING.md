@@ -55,6 +55,7 @@ An example commit: `title: short message`.
 - a chore (dependecies, code redability) - chore
 - initializing commits (adding project files) - init
 - documentation related changes - docs
+- new tests added, general testing - test
 
 If you have any questions, please ask in the Q&A section of Discussions tab.
 
