@@ -1,3 +1,5 @@
+![monstera's banner image](./assets/banner.png)
+
 # monstera
 
 A cross-platform CLI to quickly retrieve system information to make issue tracking easier.
@@ -47,7 +49,7 @@ There are 2 options for how you can use 'monstera'.
 
 ## Contributing:
 To get started with contributing to `monstera`, follow this guide.
-It is recommended to read the [`CONTRIBUTING.md`](https://github.com/dishb/monstera/blob/main/CONTRIBUTING.md) file.
+It is recommended to read the [`./CONTRIBUTING.md`](https://github.com/dishb/monstera/blob/main/CONTRIBUTING.md) file.
 
 1. Clone the repository:
 
@@ -82,4 +84,7 @@ It is recommended to read the [`CONTRIBUTING.md`](https://github.com/dishb/monst
     | `pip3 install -e .` | `pip install -e .` |
 
 ## License:
-This project is licensed under the `MIT License`. The full copyright can be found in the [`LICENSE.md`](https://github.com/dishb/monstera/blob/main/LICENSE.md) file.
+This project is licensed under the `MIT License`. The full copyright can be found in the [`./LICENSE.md`](https://github.com/dishb/monstera/blob/main/LICENSE.md) file.
+
+The background photo in [`./assets/banner.png`](https://github.com/dishb/monstera/blob/main/assets/banner.png) is by [Gilles Lambert](https://unsplash.com/@gilleslambert?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/photos/mSK5nNsAsLY?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+The font used is [Victor Mono](https://github.com/rubjo/victor-mono) (bold).
