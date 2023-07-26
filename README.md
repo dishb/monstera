@@ -17,7 +17,7 @@ A list of all the information collected:
 A lot of this information depends on the environment that Python is being run in.
 
 ## Documentation:
-To get more information on how to use `monstera`, you can read the documentation [here](https://github.com/dishb/monstera/tree/main/docs).
+To get more information on how to use `monstera`, you can read the documentation in the [`docs`](https://github.com/dishb/monstera/tree/main/docs) directory.
 
 ## Installation:
 You can install `monstera` with `pip`.
@@ -47,7 +47,7 @@ There are 2 options for how you can use 'monstera'.
 
 ## Contributing:
 To get started with contributing to `monstera`, follow this guide.
-It is recommended to read the `CONTRIBUTING.md` file.
+It is recommended to read the [`CONTRIBUTING.md`](https://github.com/dishb/monstera/blob/main/CONTRIBUTING.md) file.
 
 1. Clone the repository:
 
@@ -82,4 +82,4 @@ It is recommended to read the `CONTRIBUTING.md` file.
     | `pip3 install -e .` | `pip install -e .` |
 
 ## License:
-This project is licensed under the `MIT License`. The full copyright can be found in the `LICENSE.md` file.
+This project is licensed under the `MIT License`. The full copyright can be found in the [`LICENSE.md`](https://github.com/dishb/monstera/blob/main/LICENSE.md) file.
