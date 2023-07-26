@@ -1,7 +1,6 @@
 [MAIN]
 
-ignore-paths = setup.py,
-               tests/
+ignore-paths = setup.py
 
 [MESSAGES CONTROL]
 
