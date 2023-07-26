@@ -11,7 +11,7 @@ import platform
 from os.path import dirname
 from subprocess import run as sp_run
 from argparse import ArgumentParser
-from typing import Dict, List
+from typing import Dict, List, Union
 
 import distro
 
@@ -43,7 +43,7 @@ __copyright__ = """
                 SOFTWARE.
                 """
 
-def run(packages: List[str] | str = None) -> Dict[str, str]:
+def run(packages: Union[List[str], str] = None) -> Dict[str, str]:
     """
     monstera's main function. Gets the following information about the user's machine:
     Meant for programming use. Do not use monstera._main().
