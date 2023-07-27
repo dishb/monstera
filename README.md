@@ -23,6 +23,7 @@ To get more information on how to use `monstera`, you can read the documentation
 
 ## Installation:
 `monstera` requires Python 3.9 or higher.
+
 You can install the package with `pip`.
 
 | macOS/Linux | Windows |

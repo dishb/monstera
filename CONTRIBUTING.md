@@ -57,6 +57,7 @@ An example commit: `title: short message`.
 - documentation related changes - docs
 - new tests added, general testing - test
 - deletions - delete
+- formatting or fixing Pylint issues - fmt
 
 If you have any questions, please ask in the Q&A section of Discussions tab.
 
