@@ -1,16 +1,7 @@
-"""
-monstera
-
-Author: Dishant B. (@dishb) code.dishb@gmail.com
-License: MIT License
-Source: https://github.com/dishb/monstera
-"""
-
 from setuptools import setup, find_packages
 
 VERSION = "0.0.1"
-DESCRIPTION = """A cross-platform CLI to quickly retrieve system information to make issue
-management easier."""
+DESCRIPTION = """A cross-platform CLI to quickly retrieve system information to make issue management easier."""
 
 with open("README.md", "r", encoding = "utf-8") as file:
     LONG_DESCRIPTION = file.read()
@@ -18,6 +9,7 @@ with open("README.md", "r", encoding = "utf-8") as file:
 
 with open("requirements.txt", "r", encoding = "utf-8") as file:
     REQUIREMENTS = file.read()
+    REQUIREMENTS = REQUIREMENTS.split()
     file.close()
 
 setup(name = "monstera",
