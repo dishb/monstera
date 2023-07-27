@@ -22,7 +22,8 @@ A lot of this information depends on the environment that Python is being run in
 To get more information on how to use `monstera`, you can read the documentation in the [`./docs`](https://github.com/dishb/monstera/tree/main/docs) directory.
 
 ## Installation:
-You can install `monstera` with `pip`.
+`monstera` requires Python 3.9 or higher.
+You can install the package with `pip`.
 
 | macOS/Linux | Windows |
 | --- | --- |
