@@ -1,3 +1,11 @@
+"""
+monstera
+
+Author: Dishant B. (@dishb) code.dishb@gmail.com
+License: MIT License
+Source: https://github.com/dishb/monstera
+"""
+
 from setuptools import setup, find_packages
 
 VERSION = "0.0.1"
@@ -20,7 +28,7 @@ setup(name = "monstera",
       long_description = LONG_DESCRIPTION,
       long_description_content_type = "text/markdown",
       packages = find_packages(include = ["monstera", "monstera.*"]),
-      entry_points = {"console_scripts": ["monstera = monstera:_main"]},
+      entry_points = {"console_scripts": ["monstera = monstera.__main__:_main"]},
       install_requires = REQUIREMENTS,
       python_requires = ">=3.9",
       keywords = ["monstera",

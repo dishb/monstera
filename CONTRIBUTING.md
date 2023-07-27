@@ -57,15 +57,12 @@ An example commit: `title: short message`.
 - documentation related changes - docs
 - new tests added, general testing - test
 - deletions - delete
-- formatting or fixing Pylint issues - fmt
+- formatting or fixing Pylint issues - format
 
 If you have any questions, please ask in the Q&A section of Discussions tab.
 
 ## Linting
 
 To make sure our code is maintainable, we use Pylint.
-You can lint your code by running the following command in the top level directory of the respository.
 
-| macOS/Linux | Windows |
-| --- | --- |
-| `pylint $(git ls-files '*.py') --rcfile=./.pylint.rc` | `for /F "delims=" %G in ('git ls-files "*.py"') do pylint "%G" --rcfile=.pylint.rc` |
+When running Pylint, make sure to use the `./.pylintrc` file for configuration.
