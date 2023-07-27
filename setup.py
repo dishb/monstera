@@ -50,11 +50,10 @@ setup(name = "monstera",
       license = "MIT",
       project_urls = {"Documentation": "https://github.com/dishb/monstera/tree/main/docs",
                       "Source": "https://github.com/dishb/monstera/",
-                      "Tracker": "https://github.com/dishb/monstera/issues"
+                      "Issue Tracker": "https://github.com/dishb/monstera/issues"
                       },
       url = "https://github.com/dishb/monstera",
-      classifiers = ["Development Status :: 1 - Planning",
-                     "Intended Audience :: Education",
+      classifiers = ["Intended Audience :: Education",
                      "Programming Language :: Python :: 3",
                      "Operating System :: OS Independent",
                      "License :: OSI Approved :: MIT License",
