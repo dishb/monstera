@@ -33,7 +33,7 @@ Source: https://github.com/dishb/monstera
 import sys
 import platform
 from os.path import dirname
-from subprocess import run as sp_run
+from subprocess import CalledProcessError, run as sp_run
 from typing import Dict, List, Union
 
 import distro
@@ -106,11 +106,15 @@ def run(packages: Union[List[str], str] = None) -> Dict[str, str]:
 
     if packages is not None:
         for pkg in packages:
-            output1 = sp_run([pip_cmd, "show", pkg], check = True, capture_output = True).stdout
-            output1 = output1.decode().split("\n")
+            try:
+                output1 = sp_run([pip_cmd, "show", pkg], check = True, capture_output = True).stdout
+                output1 = output1.decode().split("\n")
 
-            pkg_locs.append(output1[7].split()[1])
-            pkg_vers.append(output1[1].split()[1])
+                pkg_locs.append(output1[7].split()[1])
+                pkg_vers.append(output1[1].split()[1])
+            except CalledProcessError:
+                pkg_locs.append(f"{pkg} is not installed")
+                pkg_vers.append(f"{pkg} is not installed.")
 
     major = sys.version_info[0]
     minor = sys.version_info[1]
