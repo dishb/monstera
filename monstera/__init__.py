@@ -14,6 +14,7 @@ from argparse import ArgumentParser
 from typing import Dict, List, Union
 
 import distro
+from colorama import Fore, Style, init, deinit
 
 __source__ = "https://github.com/dishb/monstera"
 __license__ = "MIT License"
@@ -169,6 +170,8 @@ def _main() -> int:
     description = """description: A cross-platform CLI to quickly retrieve
 system information to make issue management easier."""
 
+    init(autoreset = True)
+
     parser = ArgumentParser(prog = "monstera",
                             description = description,
                             )
@@ -187,19 +190,43 @@ system information to make issue management easier."""
     packages = args.names
     info = run(packages = packages)
 
-    print(f"\nPython: {info['python_version']}, {info['release_level']}")
-    print(f"\nPython Location: {info['python_location']}")
-    print(f"\nOperating System: {info['os']} {info['os_version']}")
-    print(f"\nArchitecture: {info['architecture']}")
-    print(f"\nPip: {info['pip_version']}")
-    print(f"\nPip Location: {info['pip_location']}")
+    print(Fore.YELLOW + Style.BRIGHT + "\nPython:"
+          + Style.RESET_ALL
+          + f" {info['python_version']}, {info['release_level']}"
+          )
+
+    print(Fore.RED + Style.BRIGHT + "\nPython Location:"
+          + Style.RESET_ALL
+          + f" {info['python_location']}"
+          )
+
+    print(Fore.GREEN + Style.BRIGHT + "\nOperating System:"
+          + Style.RESET_ALL
+          + f" {info['os']} {info['os_version']}"
+          )
+
+    print(Fore.BLUE + Style.BRIGHT + "\nArchitecture:" +
+          Style.RESET_ALL
+          + f" {info['architecture']}"
+          )
+
+    print(Fore.MAGENTA + Style.BRIGHT + "\nPip:"
+          + Style.RESET_ALL
+          + f" {info['pip_version']}"
+          )
+
+    print(Fore.CYAN + Style.BRIGHT + "\nPip Location:"
+          + Style.RESET_ALL
+          + f" {info['pip_location']}"
+          )
 
     if packages is not None:
         for pkg in packages:
-            print(f"\n{pkg}:")
+            print(Style.BRIGHT + f"\n{pkg}:")
             print(f"    Location: {info[f'{pkg}_location']}")
             print(f"    Version: {info[f'{pkg}_version']}")
 
     print("")
 
+    deinit()
     return 0
