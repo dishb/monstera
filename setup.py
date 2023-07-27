@@ -45,13 +45,16 @@ setup(name = "monstera",
                       "Issue Tracker": "https://github.com/dishb/monstera/issues"
                       },
       url = "https://github.com/dishb/monstera",
-      classifiers = ["Intended Audience :: Education",
-                     "Programming Language :: Python :: 3",
+      classifiers = ["Programming Language :: Python :: 3.9",
+                     "Programming Language :: Python :: 3.10",
+                     "Programming Language :: Python :: 3.11",
                      "Operating System :: OS Independent",
                      "License :: OSI Approved :: MIT License",
                      "Environment :: Console",
                      "Intended Audience :: Developers",
                      "Natural Language :: English",
+                     "Topic :: Software Development",
                      "Topic :: Software Development :: Bug Tracking"
+                     "Topic :: Software Development :: Libraries :: Python Modules",
                      ]
       )
