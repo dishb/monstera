@@ -19,7 +19,7 @@ A list of all the information collected:
 A lot of this information depends on the environment that Python is being run in.
 
 ## Documentation:
-To get more information on how to use `monstera`, you can read the documentation in the [`docs`](https://github.com/dishb/monstera/tree/main/docs) directory.
+To get more information on how to use `monstera`, you can read the documentation in the [`./docs`](https://github.com/dishb/monstera/tree/main/docs) directory.
 
 ## Installation:
 You can install `monstera` with `pip`.
