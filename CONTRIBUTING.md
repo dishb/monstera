@@ -68,13 +68,3 @@ You can lint your code by running the following command in the top level directo
 | macOS/Linux | Windows |
 | --- | --- |
 | `pylint $(git ls-files '*.py') --rcfile=./.pylint.rc` | `for /F "delims=" %G in ('git ls-files "*.py"') do pylint "%G" --rcfile=.pylint.rc` |
-
-## Testing
-
-To make sure the code runs without errors or problems, please test your code with Pytest.
-Run the following command in the top level directory of the repository.
-
-| macOS/Linux | Windows |
-| --- | --- |
-| `pytest -q --rootdir=./tests/` | `pytest -q --rootdir=.\tests\` |
-
