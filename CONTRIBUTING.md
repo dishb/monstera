@@ -56,6 +56,7 @@ An example commit: `title: short message`.
 - initializing commits (adding project files) - init
 - documentation related changes - docs
 - new tests added, general testing - test
+- deletions - delete
 
 If you have any questions, please ask in the Q&A section of Discussions tab.
 
