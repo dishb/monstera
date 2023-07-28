@@ -22,6 +22,14 @@
 # SOFTWARE.
 #
 
+"""
+monstera
+
+Author: Dishant B. (@dishb) code.dishb@gmail.com
+License: MIT License
+Source: https://github.com/dishb/monstera
+"""
+
 from subprocess import run
 from platform import system
 from os.path import dirname
