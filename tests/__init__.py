@@ -29,19 +29,3 @@ Author: Dishant B. (@dishb) code.dishb@gmail.com
 License: MIT License
 Source: https://github.com/dishb/monstera
 """
-
-from subprocess import run
-from platform import system
-from os.path import dirname
-from os import chdir
-
-if __name__ == "__main__":
-    cwd = dirname(__file__).removesuffix("/utils")
-    chdir(cwd)
-
-    if system() == "Darwin" or system() == "Linux":
-        PIP_CMD = "pip3"
-    else:
-        PIP_CMD = "pip"
-
-    run([PIP_CMD, "install", "-e", "."], check = True)
