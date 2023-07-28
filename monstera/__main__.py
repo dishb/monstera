@@ -90,36 +90,42 @@ system information to make issue management easier."""
           + f" {info['python_version']}, {info['release_level']}"
           )
 
-    print(Fore.RED + Style.BRIGHT + "\nPython Location:"
+    print(Fore.YELLOW + Style.BRIGHT + "\nPython Location:"
           + Style.RESET_ALL
           + f" {info['python_location']}"
           )
 
-    print(Fore.GREEN + Style.BRIGHT + "\nOperating System:"
+    print(Fore.YELLOW + Style.BRIGHT + "\nOperating System:"
           + Style.RESET_ALL
           + f" {info['os']} {info['os_version']}"
           )
 
-    print(Fore.BLUE + Style.BRIGHT + "\nArchitecture:" +
+    print(Fore.YELLOW + Style.BRIGHT + "\nArchitecture:" +
           Style.RESET_ALL
           + f" {info['architecture']}"
           )
 
-    print(Fore.MAGENTA + Style.BRIGHT + "\nPip:"
+    print(Fore.YELLOW + Style.BRIGHT + "\nPip:"
           + Style.RESET_ALL
           + f" {info['pip_version']}"
           )
 
-    print(Fore.CYAN + Style.BRIGHT + "\nPip Location:"
+    print(Fore.YELLOW + Style.BRIGHT + "\nPip Location:"
           + Style.RESET_ALL
           + f" {info['pip_location']}"
           )
 
     if packages is not None:
         for pkg in packages:
-            print(Style.BRIGHT + f"\n{pkg}:")
-            print(f"    Location: {info[f'{pkg}_location']}")
-            print(f"    Version: {info[f'{pkg}_version']}")
+            if info[f"{pkg}_version"] == f"{pkg} is not installed.":
+                print(Fore.RED + Style.BRIGHT + "\nError:"
+                      + Style.RESET_ALL
+                      + f" {pkg} is not installed."
+                      )
+            else:
+                print(Style.BRIGHT + Fore.BLUE + f"\n{pkg}:")
+                print(f"    Location: {info[f'{pkg}_location']}")
+                print(f"    Version: {info[f'{pkg}_version']}")
 
     print("")
 
