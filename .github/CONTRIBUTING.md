@@ -83,6 +83,7 @@ An example commit: `title: short message`.
 - deletions - delete
 - formatting or fixing Pylint issues - format
 - organizing file structure, changing directory/file names - org
+- bumping versions up - bump
 
 If you have any questions, please ask in the Q&A section of Discussions tab.
 

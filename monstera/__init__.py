@@ -40,7 +40,7 @@ import distro
 
 __source__ = "https://github.com/dishb/monstera"
 __license__ = "MIT License"
-__version__ = "0.0.1"
+__version__ = "0.0.2"
 __author__ = "Dishant B. (@dishb) <code.dishb@gmail.com>"
 __copyright__ = """
                 MIT License
