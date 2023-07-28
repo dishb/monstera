@@ -110,7 +110,8 @@ It is recommended to read the [`./.github/CONTRIBUTING.md`](https://github.com/d
     | `pip3 install -e .` | `pip install -e .` |
 
 ## Code of Conduct
-We ask that you respect others and read the full Code of Conduct in the [`./.github/CODE_OF_CONDUCT.md`](https://github.com/dishb/monstera/blob/main/.github/CODE_OF_CONDUCT.md) file.
+This project is goverened by the Contributor Covenant Code of Conduct.
+We ask that you read the full Code of Conduct in the [`./.github/CODE_OF_CONDUCT.md`](https://github.com/dishb/monstera/blob/main/.github/CODE_OF_CONDUCT.md) file.
 
 ## License:
 This project is licensed under the `MIT License`. The full copyright can be found in the [`./LICENSE.md`](https://github.com/dishb/monstera/blob/main/LICENSE.md) file.
