@@ -75,7 +75,7 @@ There are 2 options for how you can use 'monstera'.
 
 ## Contributing:
 To get started with contributing to `monstera`, follow this guide.
-It is recommended to read the [`./CONTRIBUTING.md`](https://github.com/dishb/monstera/blob/main/CONTRIBUTING.md) file.
+It is recommended to read the [`./.github/CONTRIBUTING.md`](https://github.com/dishb/monstera/blob/main/.github/CONTRIBUTING.md) file.
 
 1. Clone the repository:
 
@@ -108,6 +108,9 @@ It is recommended to read the [`./CONTRIBUTING.md`](https://github.com/dishb/mon
     | macOS/Linux | Windows |
     | --- | --- |
     | `pip3 install -e .` | `pip install -e .` |
+
+## Code of Conduct
+We ask that you respect others and read the full Code of Conduct in the [`./.github/CODE_OF_CONDUCT.md`](https://github.com/dishb/monstera/blob/main/.github/CODE_OF_CONDUCT.md) file.
 
 ## License:
 This project is licensed under the `MIT License`. The full copyright can be found in the [`./LICENSE.md`](https://github.com/dishb/monstera/blob/main/LICENSE.md) file.
