@@ -78,7 +78,7 @@ setup(name = "monstera",
                      "Intended Audience :: Developers",
                      "Natural Language :: English",
                      "Topic :: Software Development",
-                     "Topic :: Software Development :: Bug Tracking"
+                     "Topic :: Software Development :: Bug Tracking",
                      "Topic :: Software Development :: Libraries :: Python Modules",
                      ]
       )
