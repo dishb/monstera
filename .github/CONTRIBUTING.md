@@ -82,6 +82,7 @@ An example commit: `title: short message`.
 - new tests added, general testing - test
 - deletions - delete
 - formatting or fixing Pylint issues - format
+- organizing file structure, changing directory/file names - org
 
 If you have any questions, please ask in the Q&A section of Discussions tab.
 
