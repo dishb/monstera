@@ -53,7 +53,7 @@ Python: 3.11.4, final release
 
 Python Location: /Users/dishb/Coding/monstera/.venv/bin
 
-Operating System: macOS 12.6.7
+Operating System: macOS 12.6.8
 
 Architecture: 64bit
 
@@ -85,7 +85,7 @@ Python: 3.11.4, final release
 
 Python Location: /Users/dishb/Coding/monstera/.venv/bin
 
-Operating System: macOS 12.6.7
+Operating System: macOS 12.6.8
 
 Architecture: 64bit
 
@@ -121,7 +121,7 @@ Python: 3.11.4, final release
 
 Python Location: /Users/dishb/Coding/monstera/.venv/bin
 
-Operating System: macOS 12.6.7
+Operating System: macOS 12.6.8
 
 Architecture: 64bit
 
