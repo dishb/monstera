@@ -29,10 +29,3 @@ Author: Dishant B. (@dishb) code.dishb@gmail.com
 License: MIT License
 Source: https://github.com/dishb/monstera
 """
-
-from sys import exit as sys_exit
-
-from ._core._entry_points import _console
-
-if __name__ == "__main__":
-    sys_exit(_console())

@@ -22,7 +22,7 @@
 # SOFTWARE.
 #
 
-from setuptools import setup, find_packages
+from setuptools import setup
 
 VERSION = "0.0.2"
 DESCRIPTION = """A cross-platform CLI to quickly retrieve system information to make issue management easier."""
@@ -43,7 +43,8 @@ setup(name = "monstera",
       description = DESCRIPTION,
       long_description = LONG_DESCRIPTION,
       long_description_content_type = "text/markdown",
-      packages = find_packages(include = ["monstera", "monstera.*"]),
+      packages = ["monstera",
+                  "monstera._core"],
       entry_points = {"console_scripts": ["monstera = monstera.__main__:_main"]},
       install_requires = REQUIREMENTS,
       python_requires = ">=3.9",
