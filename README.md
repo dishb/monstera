@@ -22,7 +22,9 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 -->
 
-![monstera's banner image](https://github.com/dishb/monstera/blob/2517642244aac49d978ed6b779cedb8e4fbb4681/assets/banner.png)
+<div align = 'center'>
+    <img alt = 'banner image' src = './assets/banner.png' width = 300/>
+</div>
 
 # monstera
 
