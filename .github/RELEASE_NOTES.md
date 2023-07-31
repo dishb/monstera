@@ -1,5 +1,3 @@
-![monstera's banner image](./assets/banner.png)
-
 # monstera
 
 A cross-platform CLI to quickly retrieve system information to make issue management easier.
@@ -34,9 +32,3 @@ Attached are the following files:
 ## License:
 
 This project is licensed under the `MIT License`. The full copyright can be found in the `license.txt` file.
-
-## Attribution:
-
-The background photo in the banner image is by [Gilles Lambert](https://unsplash.com/@gilleslambert?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/photos/mSK5nNsAsLY?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
-
-The font used is [Victor Mono](https://github.com/rubjo/victor-mono) (bold).
