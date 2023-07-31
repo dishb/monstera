@@ -1,4 +1,4 @@
-![monstera's banner image](https://github.com/dishb/monstera/blob/13667f60b5a1260e057482733c43dc0bbdaf514f/assets/banner.png)
+![monstera's banner image](./assets/banner.png)
 
 # monstera
 
