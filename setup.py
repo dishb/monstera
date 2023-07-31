@@ -24,7 +24,7 @@
 
 from setuptools import setup
 
-VERSION = "0.0.2"
+VERSION = "0.0.3"
 DESCRIPTION = """A cross-platform CLI to quickly retrieve system information to make issue management easier."""
 
 with open("README.md", "r", encoding = "utf-8") as file:

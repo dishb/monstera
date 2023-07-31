@@ -34,7 +34,7 @@ from ._core._main import run
 
 __source__ = "https://github.com/dishb/monstera"
 __license__ = "MIT License"
-__version__ = "0.0.2"
+__version__ = "0.0.3"
 __author__ = "Dishant B. (@dishb) <code.dishb@gmail.com>"
 __copyright__ = """
                 MIT License
