@@ -55,7 +55,7 @@ You can install the package with `pip`.
 | `pip3 install monstera` | `pip install monstera` |
 
 ## Usage:
-There are 2 options for how you can use 'monstera'.
+There are 2 options for how you can use `monstera`.
 
 1. Use the CLI:
 
