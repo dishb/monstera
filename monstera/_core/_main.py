@@ -77,9 +77,27 @@ def run(packages: Union[List[str], str] = None) -> Dict[str, str]:
     pkg_locs = []
 
     if packages is not None:
-        for pkg in packages:
+        if isinstance(packages, list):
+            for pkg in packages:
+                try:
+                    output1 = sp_run([pip_cmd, "show", pkg],
+                                     check = True,
+                                     capture_output = True
+                                     ).stdout
+                    output1 = output1.decode().split("\n")
+
+                    pkg_locs.append(output1[7].split()[1])
+                    pkg_vers.append(output1[1].split()[1])
+                except CalledProcessError:
+                    pkg_locs.append(f"{pkg} is not installed")
+                    pkg_vers.append(f"{pkg} is not installed.")
+
+        elif isinstance(packages, str):
             try:
-                output1 = sp_run([pip_cmd, "show", pkg], check = True, capture_output = True).stdout
+                output1 = sp_run([pip_cmd, "show", packages],
+                                 check = True,
+                                 capture_output = True
+                                 ).stdout
                 output1 = output1.decode().split("\n")
 
                 pkg_locs.append(output1[7].split()[1])
