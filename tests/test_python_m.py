@@ -34,6 +34,38 @@ from subprocess import run
 
 from pytest import main
 
+def test_empty_flag() -> None:
+    """
+    Tests the command: python3 -m monstera -m
+
+    Only meant to be run by Dishant B. in his environment.
+    """
+
+    command = run(["python3", "-m", "monstera", "-m"],
+                  check = False,
+                  capture_output = True
+                  )
+    return_code = command.returncode
+    output = command.stdout.decode()
+
+    expected_output = """
+Python: 3.11.4, final release
+
+Python Location: /Users/dishb/Coding/monstera/.venv/bin
+
+Operating System: macOS 12.6.8
+
+Architecture: 64bit
+
+Pip: 23.2.1
+
+Pip Location: /Users/dishb/Coding/monstera/.venv/lib/python3.11/site-packages
+
+"""
+
+    assert return_code == 0
+    assert output == expected_output
+
 def test_no_package() -> None:
     """
     Tests the command: python3 -m monstera
