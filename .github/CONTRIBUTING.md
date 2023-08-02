@@ -92,3 +92,11 @@ If you have any questions, please ask in the Q&A section of Discussions tab.
 To make sure our code is maintainable, we use Pylint.
 
 When running Pylint, make sure to use the `./.pylintrc` file for configuration.
+
+## Testing
+
+You can test your changes/code with Pytest.
+
+To test your code, run Pytest in the top level directory of the repository. Make sure you installed `monstera` in edit mode first!
+
+
