@@ -77,7 +77,7 @@ There are 2 options for how you can use `monstera`.
 
 ## Contributing:
 To get started with contributing to `monstera`, follow this guide.
-It is recommended to read the [`./.github/CONTRIBUTING.md`](https://github.com/dishb/monstera/blob/main/.github/CONTRIBUTING.md) file.
+It is recommended to read the [`./CONTRIBUTING.md`](https://github.com/dishb/monstera/blob/main/CONTRIBUTING.md) file.
 
 1. Clone the repository:
 
