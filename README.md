@@ -83,7 +83,7 @@ It is recommended to read the [`./CONTRIBUTING.md`](https://github.com/dishb/mon
 
     | OS Independent |
     | --- |
-    | `git clone https://github.com/dishb/monstera` |
+    | `git clone https://github.com/dishb/monstera.git` |
 
     Change to the directory:
 

@@ -35,7 +35,7 @@ They'll help you clone the repository and install all the dependencies.
 
     | OS Independent |
     | --- |
-    | `git clone https://github.com/dishb/monstera` |
+    | `git clone https://github.com/dishb/monstera.git` |
 
     Change to the directory:
 
