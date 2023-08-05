@@ -113,7 +113,7 @@ It is recommended to read the [`./CONTRIBUTING.md`](https://github.com/dishb/mon
 
 ## Code of Conduct
 This project is goverened by the Contributor Covenant Code of Conduct.
-We ask that you read the full Code of Conduct in the [`./.github/CODE_OF_CONDUCT.md`](https://github.com/dishb/monstera/blob/main/.github/CODE_OF_CONDUCT.md) file.
+We ask that you read the full Code of Conduct in the [`./CODE_OF_CONDUCT.md`](https://github.com/dishb/monstera/blob/main/CODE_OF_CONDUCT.md) file.
 
 ## License:
 This project is licensed under the `MIT License`. The full copyright can be found in the [`./LICENSE.md`](https://github.com/dishb/monstera/blob/main/LICENSE.md) file.
