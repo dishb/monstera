@@ -80,7 +80,8 @@ system information to make issue management easier."""
         print("monstera: v0.0.4")
 
         return 0
-    elif args.license:
+
+    if args.license:
         print("""
 monstera is licensed under the MIT License:
 
