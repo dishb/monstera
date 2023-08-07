@@ -31,5 +31,4 @@ ignore-paths = setup.py
 disable = too-many-locals,
           too-many-branches,
           too-many-statements,
-          unsupported-binary-operation,
           duplicate-code
