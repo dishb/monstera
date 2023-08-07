@@ -99,4 +99,4 @@ You can test your changes/code with Pytest.
 
 To test your code, run Pytest in the top level directory of the repository. Make sure you installed `monstera` in edit mode first!
 
-
+In Visual Studio Code, you can configure `pytest` as the default testing framework.
