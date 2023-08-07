@@ -33,3 +33,4 @@ This is the documentation for `monstera`'s CLI.
 | --module | -m | Find information on one or more Python packages. includes version and location. | `monstera --module PACKAGE_NAMES` |
 | --help | -h | Print a simple help message. | `monstera --help` |
 | --version | -v | Print the version of `monstera`. | `monstera --version` |
+| --copyright | -c | Print the license/full copyright of `monstera`. | `monstera --copyright` |
