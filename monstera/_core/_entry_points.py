@@ -38,24 +38,7 @@ from ._main import run
 
 def _console() -> int:
     """
-    monstera's main entry point. Gets the following information about the user's machine:
-    Not meant for programming usage. Please use monstera.run().
-
-    - Operating system
-    - OS version
-    - Machine architecture
-    - Version of Python
-    - Python's location
-    - Version of pip
-    - pip's location
-
-    and optionally:
-
-    - Version of a package
-    - The package's location
-
-    Note that versions and locations of Python, pip, and packages are dependent on the environment
-    they are run in.
+    monstera's main entry point. Prints the information that monstera.run() returns.
 
     Returns:
         int: The exit code.
@@ -78,8 +61,19 @@ system information to make issue management easier."""
                         dest = "names",
                         metavar = "MODULE NAMES"
                         )
+    parser.add_argument("-v", "--version",
+                        action = "store_true",
+                        help = "print the version of monstera.",
+                        required = False,
+                        dest = "version"
+                        )
 
     args = parser.parse_args()
+
+    if args.version:
+        print("monstera: v0.0.4")
+
+        return 0
 
     packages = args.names
     info = run(packages = packages)
