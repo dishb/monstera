@@ -38,7 +38,8 @@ from ._main import run
 
 def _console() -> int:
     """
-    monstera's main entry point. Prints the information that monstera.run() returns.
+    monstera's main entry point. Not meant for programming use. Instead, use monstera.run().
+    Prints the information that monstera.run() returns.
 
     Returns:
         int: The exit code.

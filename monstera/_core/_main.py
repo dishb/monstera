@@ -34,14 +34,14 @@ import sys
 import platform
 from os.path import dirname
 from subprocess import CalledProcessError, run as sp_run
-from typing import Dict, List, Union
+from typing import Dict, List, Union, Optional
 
 import distro
 
-def run(packages: Union[List[str], str] = None) -> Dict[str, str]:
+def run(packages: Optional[Union[List[str], str]] = None) -> Dict[str, str]:
     """
-    monstera's main function. Gets the following information about the user's machine:
-    Meant for programming use. Do not use monstera._main().
+    monstera's main function. Meant for programming usage (inside Python files).
+    Gets the following information about the user's machine:
 
     - Operating system
     - OS version
