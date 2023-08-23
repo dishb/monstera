@@ -78,7 +78,7 @@ system information to make issue management easier."""
     args = parser.parse_args()
 
     if args.version:
-        print("monstera: v0.0.4")
+        print("monstera: v0.0.5")
 
         return 0
 
