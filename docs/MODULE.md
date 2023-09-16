@@ -26,7 +26,7 @@ SOFTWARE.
 
 This is the documentation for the `monstera` module.
 
-## Arguments:
+## Functions:
 
 | Functions | Arguments | Functionality | Usage |
 | --- | --- | --- | --- |
