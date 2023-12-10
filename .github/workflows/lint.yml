@@ -1,4 +1,4 @@
-name: Lint code with Pylint
+name: Lint code with Ruff
 
 on:
   push:
