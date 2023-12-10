@@ -30,7 +30,7 @@ License: MIT License
 Source: https://github.com/dishb/monstera
 """
 
-from ._core._main import run
+from ._core._main import run # noqa: F401
 
 __source__ = "https://github.com/dishb/monstera"
 __license__ = "MIT License"
