@@ -25,6 +25,6 @@ jobs:
         pip install --upgrade pip
         pip install --upgrade -r requirements.txt
         pip install --upgrade -r dev-requirements.txt    
-    - name: Lint the code with Pylint
+    - name: Lint the code with Ruff
       run: |
         ruff .
