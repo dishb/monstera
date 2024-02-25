@@ -49,17 +49,17 @@ def test_empty_flag() -> None:
     output = command.stdout.decode()
 
     expected_output = """
-Python: 3.11.4, final release
+Python: 3.12.2, final release
 
-Python Location: /Users/dishb/Coding/monstera/.venv/bin
+Python Location: /Library/Frameworks/Python.framework/Versions/3.12/bin
 
-Operating System: macOS 12.6.8
+Operating System: macOS 14.3.1
 
 Architecture: 64bit
 
-Pip: 23.2.1
+Pip: 24.0
 
-Pip Location: /Users/dishb/Coding/monstera/.venv/lib/python3.11/site-packages
+Pip Location: /Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages
 
 """
 
@@ -81,17 +81,17 @@ def test_no_package() -> None:
     output = command.stdout.decode()
 
     expected_output = """
-Python: 3.11.4, final release
+Python: 3.12.2, final release
 
-Python Location: /Users/dishb/Coding/monstera/.venv/bin
+Python Location: /Library/Frameworks/Python.framework/Versions/3.12/bin
 
-Operating System: macOS 12.6.8
+Operating System: macOS 14.3.1
 
 Architecture: 64bit
 
-Pip: 23.2.1
+Pip: 24.0
 
-Pip Location: /Users/dishb/Coding/monstera/.venv/lib/python3.11/site-packages
+Pip Location: /Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages
 
 """
 
@@ -100,12 +100,12 @@ Pip Location: /Users/dishb/Coding/monstera/.venv/lib/python3.11/site-packages
 
 def test_single_package() -> None:
     """
-    Tests the command: python3 -m monstera -m pylint
+    Tests the command: python3 -m monstera -m monstera
 
     Only meant to be run by Dishant B. in his environment.
     """
 
-    command = run(["python3", "-m", "monstera", "-m", "pylint"],
+    command = run(["python3", "-m", "monstera", "-m", "monstera"],
                   check = False,
                   capture_output = True
                   )
@@ -113,21 +113,21 @@ def test_single_package() -> None:
     output = command.stdout.decode()
 
     expected_output = """
-Python: 3.11.4, final release
+Python: 3.12.2, final release
 
-Python Location: /Users/dishb/Coding/monstera/.venv/bin
+Python Location: /Library/Frameworks/Python.framework/Versions/3.12/bin
 
-Operating System: macOS 12.6.8
+Operating System: macOS 14.3.1
 
 Architecture: 64bit
 
-Pip: 23.2.1
+Pip: 24.0
 
-Pip Location: /Users/dishb/Coding/monstera/.venv/lib/python3.11/site-packages
+Pip Location: /Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages
 
-pylint:
-    Location: /Users/dishb/Coding/monstera/.venv/lib/python3.11/site-packages
-    Version: 2.17.5
+monstera:
+    Location: /Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages
+    Version: 0.0.5
 
 """
 
@@ -141,7 +141,7 @@ def test_multiple_packages() -> None:
     Only meant to be run by Dishant B. in his environment.
     """
 
-    command = run(["python3", "-m", "monstera", "-m", "pylint", "pytest"],
+    command = run(["python3", "-m", "monstera", "-m", "monstera", "pytest"],
                   check = False,
                   capture_output = True
                   )
@@ -149,26 +149,25 @@ def test_multiple_packages() -> None:
     output = command.stdout.decode()
 
     expected_output = """
-Python: 3.11.4, final release
+Python: 3.12.2, final release
 
-Python Location: /Users/dishb/Coding/monstera/.venv/bin
+Python Location: /Library/Frameworks/Python.framework/Versions/3.12/bin
 
-Operating System: macOS 12.6.8
+Operating System: macOS 14.3.1
 
 Architecture: 64bit
 
-Pip: 23.2.1
+Pip: 24.0
 
-Pip Location: /Users/dishb/Coding/monstera/.venv/lib/python3.11/site-packages
+Pip Location: /Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages
 
-pylint:
-    Location: /Users/dishb/Coding/monstera/.venv/lib/python3.11/site-packages
-    Version: 2.17.5
+monstera:
+    Location: /Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages
+    Version: 0.0.5
 
 pytest:
-    Location: /Users/dishb/Coding/monstera/.venv/lib/python3.11/site-packages
-    Version: 7.4.0
-
+    Location: /Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages
+    Version: 8.0.2
 """
 
     assert return_code == 0
