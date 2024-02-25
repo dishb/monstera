@@ -22,10 +22,6 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 -->
 
-<div align = 'center'>
-    <img alt = 'banner image' src = './assets/banner.png' width = 300/>
-</div>
-
 # monstera
 
 A cross-platform CLI to quickly retrieve system information to make issue management easier.
@@ -117,9 +113,3 @@ We ask that you read the full Code of Conduct in the [`./CODE_OF_CONDUCT.md`](ht
 
 ## License:
 This project is licensed under the `MIT License`. The full copyright can be found in the [`./LICENSE.md`](https://github.com/dishb/monstera/blob/main/LICENSE.md) file.
-
-## Attribution
-
-The background photo in [`./assets/banner.png`](https://github.com/dishb/monstera/blob/main/assets/banner.png) is by [Gilles Lambert](https://unsplash.com/@gilleslambert?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/photos/mSK5nNsAsLY?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
-
-The font used is [Victor Mono](https://github.com/rubjo/victor-mono) (bold).
