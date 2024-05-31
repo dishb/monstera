@@ -27,9 +27,9 @@ from setuptools import setup
 VERSION = "0.0.5"
 DESCRIPTION = "A cross-platform CLI to quickly retrieve system information to make issue management easier."
 
-with open("README.md", "r", encoding = "utf-8") as file:
-    LONG_DESCRIPTION = file.read()
-    file.close()
+# with open("README.md", "r", encoding = "utf-8") as file:
+#     LONG_DESCRIPTION = file.read()
+#     file.close()
 
 with open("requirements.txt", "r", encoding = "utf-8") as file:
     REQUIREMENTS = file.read()
