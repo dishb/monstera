@@ -17,7 +17,7 @@ def test_empty_flag() -> None:
     output = command.stdout.decode()
 
     expected_output = """
-Python: 3.12.2, final release
+Python: 3.12.3, final release
 
 Python Location: /Library/Frameworks/Python.framework/Versions/3.12/bin
 
@@ -49,7 +49,7 @@ def test_no_package() -> None:
     output = command.stdout.decode()
 
     expected_output = """
-Python: 3.12.2, final release
+Python: 3.12.3, final release
 
 Python Location: /Library/Frameworks/Python.framework/Versions/3.12/bin
 
@@ -81,7 +81,7 @@ def test_single_package() -> None:
     output = command.stdout.decode()
 
     expected_output = """
-Python: 3.12.2, final release
+Python: 3.12.3, final release
 
 Python Location: /Library/Frameworks/Python.framework/Versions/3.12/bin
 
@@ -117,7 +117,7 @@ def test_multiple_packages() -> None:
     output = command.stdout.decode()
 
     expected_output = """
-Python: 3.12.2, final release
+Python: 3.12.3, final release
 
 Python Location: /Library/Frameworks/Python.framework/Versions/3.12/bin
 
