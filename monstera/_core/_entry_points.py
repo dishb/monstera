@@ -1,4 +1,7 @@
 from argparse import ArgumentParser
+from os import getcwd
+from os.path import exists
+from pathlib import Path
 
 from colorama import Fore, Style, init, deinit
 
@@ -81,7 +84,18 @@ SOFTWARE
         return 0
 
     packages = args.names
-    info = run(packages = packages)
+    
+    if packages is None:
+        cwd = Path(getcwd())
+        if exists(cwd / "requirements.txt"):
+            with open(cwd / "requirements.txt") as file:
+                lines = file.read()
+                lines = lines.split("\n")
+                file.close()
+
+        packages = lines
+    
+    info = run(packages)
 
     print(Fore.YELLOW + Style.BRIGHT + "\nPython:"
           + Style.RESET_ALL

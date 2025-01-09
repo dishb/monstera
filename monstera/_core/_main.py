@@ -2,11 +2,11 @@ import sys
 import platform
 from os.path import dirname
 from subprocess import CalledProcessError, run as sp_run
-from typing import Dict, List, Union, Optional
+from typing import Dict, List, Union
 
 import distro
 
-def run(packages: Optional[Union[List[str], str]] = None) -> Dict[str, str]:
+def run(packages: Union[List[str], str] = None) -> Dict[str, str]:
     """
     monstera's main function. Meant for programming usage (inside Python files).
     Gets the following information about the user's machine:
@@ -59,8 +59,7 @@ def run(packages: Optional[Union[List[str], str]] = None) -> Dict[str, str]:
                 except CalledProcessError:
                     pkg_locs.append(f"{pkg} is not installed")
                     pkg_vers.append(f"{pkg} is not installed.")
-
-        elif isinstance(packages, str):
+        else:
             try:
                 output1 = sp_run([pip_cmd, "show", packages],
                                  check = True,
@@ -83,21 +82,21 @@ def run(packages: Optional[Union[List[str], str]] = None) -> Dict[str, str]:
     else:
         level += " release"
 
-    oper_sys = platform.system() # pylint: disable = invalid-name
+    oper_sys = platform.system()
     if oper_sys == "":
-        oper_sys = "Could not be determined." # pylint: disable = invalid-name
+        oper_sys = "Could not be determined."
         os_version = "Could not be determined."
         arch = "Could not be determined."
 
     if oper_sys.lower() == "darwin":
-        oper_sys = "macOS" # pylint: disable = invalid-name
+        oper_sys = "macOS"
         os_version = platform.mac_ver()[0]
         arch = platform.architecture()[0]
     elif oper_sys.lower() == "windows":
         os_version = platform.win32_ver()[0]
         arch = platform.architecture()[0]
     elif oper_sys.lower() == "linux":
-        oper_sys = distro.name() # pylint: disable = invalid-name
+        oper_sys = distro.name()
         os_version = distro.version(best = True)
         arch = platform.architecture()[0]
 
